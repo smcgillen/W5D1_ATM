@@ -1,0 +1,21 @@
+%div#app
+  %h2
+    Bank of WDI
+  %div.checking
+    %p#checking_bal
+    %div.one= text_field_tag 'bal', nil, :id => 'checking_amt'
+    %h3
+      Checking Acct
+    %div.one= submit_tag 'Deposit', :id => 'checking_deposit'
+    %div.one= submit_tag 'Withdraw', :id => 'checking_withdrawal'
+
+  %div.savings
+    %p#saving_bal
+    %div.one= text_field_tag 'bal', nil, :id => 'saving_amt'
+    %h3
+      Savings Acct
+
+    %div.one= submit_tag 'Deposit', :id => 'saving_deposit'
+    %div.one= submit_tag 'Withdraw', :id => 'saving_withdrawal'
+
+
